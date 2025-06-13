@@ -156,7 +156,7 @@ const setTypeImage = (img, type) => {
       img.src = "../Images/Type/paws.png";
       break;
     case "Fire":
-      img.src = "Pokedex/Images/Type/flame.png";
+      img.src = "/Pokedex/Images/Type/flame.png";
       break;
     case "Water":
       img.src = "../Images/Type/drop.png";
