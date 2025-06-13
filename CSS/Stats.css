@@ -1,0 +1,64 @@
+/* Stats tab */
+.stats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  height: 220px;
+  width: 280px;
+}
+
+/* Size of the images next to each stat. */
+.stats img{
+  width: 20px;
+}
+
+/* Add a rounded corner to each progress bar. */
+.hp-progress,
+.defence-progress,
+.attack-progress,
+.special-attack-progress,
+.special-defence-progress,
+.speed-progress{
+  border-radius: 5px;
+}
+
+/* Stat is each row. */
+.stat{
+  display: grid;
+  grid-template-columns: 40% 10% 50%;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* Left side of the row containing the picture and text. */
+.image-and-name{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+/* Add some distance between the picture and text. */
+.image-and-name p{
+  padding-left: 4%;
+}
+
+/* Progress bar. */
+.progress-bar{
+  background-color: rgb(236, 236, 236);
+  height: 7px;
+  border-radius: 5px;
+}
+
+/* Progress on the bar. */
+.hp-progress,
+.attack-progress,
+.defence-progress,
+.special-attack-progress,
+.special-defence-progress,
+.speed-progress{
+  height: 100%;
+}

@@ -1,0 +1,214 @@
+/* Pop-up. */
+.black-screen{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 102;
+
+  background-color: rgba(26, 26, 26, 0.933);
+
+  display: none;
+  
+  align-items: center;
+  justify-content: center;
+}
+/* Current Pokemon. */
+.pop-up-current-pokemon{
+  height: 700px;
+  min-height: 700px;
+  width: 350px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0% 5% 0% 5%;
+}
+
+/* Previous and next pop-up containers. */
+.pop-up-previous-pokemon,
+.pop-up-next-pokemon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: rgba(0, 0, 0, 0.478);
+  height: 40vh;
+  max-height: 270px;
+  min-height: 250px;
+  border-radius: 10px;
+
+  width: 20%;
+  max-width: 250px;
+}
+.pop-up-previous-pokemon img,
+.pop-up-next-pokemon img{
+  width: 50%;
+  background-color: rgba(230, 230, 230, 0.079);
+  border: 1px solid rgba(128, 128, 128, 0.277);
+  border-radius: 50%;
+  padding: 5%;
+
+  margin: 3% 0% 3% 0%;
+
+  cursor: pointer;
+}
+.pop-up-previous-pokemon p,
+.pop-up-next-pokemon p{
+  color: white;
+}
+
+/* Top half of the pop-up. */
+.pop-up-top-half{
+  height: 45%;
+  padding-top: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+  to bottom, 
+  rgb(196,220,196) 50%, 
+  white 100%
+  );
+  border-radius: 30px 30px 0% 0%;
+
+  z-index: 80;
+  position: relative;
+}
+
+/* Bottom half of the pop-up. */
+.pop-up-bottom-half{
+  height: 45%;
+  width: 350px;
+  padding-bottom: 5%;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0% 0% 30px 30px;
+
+  margin-top: -5%;
+}
+
+/* Container that holds the Pokemon ID, and the close button. */
+.container-id-x-button{
+  height: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-id-x-button i{
+  cursor: pointer;
+  color: white;
+
+  font-size: 20px;
+}
+.pokemon-id{
+  font-weight: bold;
+  color: rgb(239, 239, 239);
+  font-size: 20px;
+  font-weight: bold;
+}
+.close-button{
+  color: white;
+  font-size: 30px;
+  opacity: 0.6;
+
+  cursor: pointer;
+}
+
+/* Div holding the Pokemon image. */
+.image-container{
+  width: 60%;
+  height: 60%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+.image-container img{
+  width: 80%;
+  border-radius: 5%;
+  z-index: 99;
+}
+.pokeball{
+  height: 40%;
+  left: 30%;
+  top: 25%;
+
+  opacity: 0.2;
+  position: absolute;
+}
+
+ /* Container for the name and arrows. */
+.contaianer-name-arrows{
+  height: 10%;
+  width: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pokemon-name{
+  font-size: 25px;
+  font-weight: 700;
+  font-family: roboto;
+}
+.contaianer-name-arrows i{
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgba(95, 95, 95, 0.317);
+  transition: 0.3s ease;
+}
+.contaianer-name-arrows i:hover{
+  transform: scale(1.2, 1.2);
+}
+
+/* Container holding the type buttons. */
+.types-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 80%;
+}
+.types-container div{
+  width: 35%;
+  height: 20px;
+  padding: 2% 0% 2% 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  box-shadow: 5px 5px 10px rgba(130, 130, 130, 0.478)
+}
+.types-container div img{
+  height: 80%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+.types-container div p{
+  color: white;
+  font-weight: 500;
+}
+
+
+
+
+
+

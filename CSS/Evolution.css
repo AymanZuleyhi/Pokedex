@@ -1,0 +1,40 @@
+/* Evoluttion tab */
+.evolution-tab{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  height: 230px;
+  width: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.evolution-tab div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 113px;
+}
+
+.evolution-tab img{
+  width: 80px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.evolution-tab img:hover{
+  transform: scale(1.1);
+}
+
+.evolution-tab i{
+  font-size: 25px;
+  opacity: 0.2;
+  margin-bottom: 20%;
+}
+
+.evolution-tab p{
+  font-weight: 500;
+}

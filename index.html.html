@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokedex</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/Images/Loading.png" type="image/png">
+
+    <!-- Mobile responsivness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/CSS/General.css" />
+    <link rel="stylesheet" href="/CSS/Loader.css" />
+    <link rel="stylesheet" href="/CSS/nav-bar.css" />
+    <link rel="stylesheet" href="/CSS/Mobile-menu.css" />
+    <link rel="stylesheet" href="/CSS/Home.css" />
+    <link rel="stylesheet" href="/CSS/Footer.css" />
+    <link rel="stylesheet" href="/CSS/About.css" />
+    <link rel="stylesheet" href="/CSS/Stats.css" />
+    <link rel="stylesheet" href="/CSS/Evolution.css" />
+    <link rel="stylesheet" href="/CSS/Pop-up.css" />
+    <link rel="stylesheet" href="/CSS/Tabs.css" />
+    <link rel="stylesheet" href="/CSS/Downloads.css" />
+    <link rel="stylesheet" href="/CSS/Favourites.css" />
+    <link rel="stylesheet" href="/CSS/Responsive.css" />
+  </head>
+
+
+  <body>
+    <div class="body-div">
+
+      <!-- Loader -->
+       <div class="loader-container">
+        <img src="Images/Loading.png"/>
+        <p>Loading</p>
+
+       </div>
+      <!-- Pop-up. -->
+      <div class="black-screen">
+        <!-- Previous Pokemon. -->
+        <div class="pop-up-previous-pokemon">
+          <p class="previousPokemonId"></p>
+          <img class="previousPokemonImage"/>
+          <p class="previousPokemonName"></p>
+        </div>
+        <!-- Current Pokemon. -->
+        <div class="pop-up-current-pokemon" >
+
+          <div class="pop-up-top-half">
+            <!-- Add to favourites, Id, and close button. -->
+            <div class="container-id-x-button">
+              <i class="fa-regular fa-heart"></i>
+              <p class="pokemon-id"></p>
+              <p class="close-button">&times;</p>
+            </div>
+
+            <!-- Official artwork. -->
+            <div class="image-container">
+              <img class="pokemon-official-artwork" src=""/>
+            </div>
+            <img class="pokeball" src="/Images/Pokeball-PNG-Free-Download.png"/>
+            
+            <!-- Name and navigation arrows. -->
+            <div class="contaianer-name-arrows">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <p class="pokemon-name"></p>
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+            
+            <!-- Buttons with the types of the Pokemon. -->
+            <div class="types-container">
+              <!-- First type. -->
+              <div class="firstPokemonType">
+                <img class="firstPokemonType-image" src="" />
+                <p class="firstPokemonType-text"></p>
+              </div>
+
+              <!-- Second type. -->
+              <div class="secondPokemonType">
+                <img class="secondPokemonType-image" src="" />
+                <p class="secondPokemonType-text"></p>
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="pop-up-bottom-half">
+            <!--Start tab labels-->
+            <ul class="tabs">
+              <li>
+                <a href="#About" id="About" class="">About</a>
+                <div></div>
+              </li>
+              <li>
+                <a href="#Stats" id="Stats" class="">Stats</a>
+                <div></div>
+              </li>
+              <li>
+                <a href="#Evolution" id="Evolution" class="">Evolution</a>
+                <div></div>
+              </li>
+              <li>
+                <a href="#Downloads" id="Downloads" class="">
+                  <!-- <i class="fa-solid fa-file-arrow-down"></i> -->
+                   Downloads
+                </a>
+                <div></div>
+              </li>
+            </ul>
+                    
+            <!--Start tab content-->
+            <ul class="tabs-content">
+              <!-- About section -->
+              <li id="About" style="display:block" class="active">
+                <div class="aboutTab">
+                  <p class="pokemon-description"></p>
+                  
+                  <!-- Weight and height -->
+                  <div class="weight-and-height-container">
+
+                    <div class="weight-height-headlines">
+                      <div>
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <p>Weight</p>
+                      </div>
+    
+                      <div>
+                        <i class="fa-solid fa-ruler"></i>
+                        <p>Height</p>
+                      </div>
+                    </div>
+    
+                    <div class="results-weight">
+                    <div><p class="pokemon-weight"></p></div>
+                    <div><p class="pokemon-height"></p></div>
+                    </div>
+
+                  </div>
+
+                  <!-- Gender probability -->
+                  <div class="gender-probability-container">
+
+                    <div class="gender-probability-headlines" >
+                      <div>
+                        <i class="fa-solid fa-mars-stroke"></i>
+                        <p>Male</p>
+                      </div>
+    
+                      <div>
+                        <i class="fa-solid fa-venus"></i>
+                        <p>Female</p>
+                      </div>
+                      </div>
+
+                    <div class="results-gender">
+                      <div><p class="male"></p></div>
+                      <div><p class="female"></p></div>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+                    
+              <!-- Stats section -->
+              <li id="Stats" class="" style="display: none;">
+                <div class="stats">
+
+                  <!-- HP -->
+                  <div class="stat">
+                    <div class="image-and-name">
+                      <img src="Images/Stats/blood-drop.png" />
+                      <p>HP</p>
+                      
+                    </div>
+                    <p class="hp-value"></p>
+                    <div class="progress-bar">
+                      <div class="hp-progress"></div>
+                    </div>
+                  </div>
+
+                  <!-- Attack -->
+                  <div class="stat">
+                    <div class="image-and-name">
+                      <img src="Images/Stats/battle.png" />
+                      <p>Attack</p>
+                      
+                    </div>
+                    <p class="attack-value"></p>
+                    <div class="progress-bar">
+                      <div class="attack-progress"></div>
+                    </div>
+                  </div>
+
+                  <!-- Defence -->
+                  <div class="stat">
+                    <div class="image-and-name">
+                      <img src="Images/Stats/defence.png" />
+                      <p>Defence</p>
+                      
+                    </div>
+                    <p class="defence-value"></p>
+                    <div class="progress-bar">
+                      <div class="defence-progress"></div>
+                    </div>
+                  </div>
+
+                  <!-- Special attack -->
+                  <div class="stat">
+                    <div class="image-and-name">
+                      <img src="Images/Stats/sword.png" />
+                      <p>Sp.Attack</p>
+                      
+                    </div>
+                    <p class="special-attack-value"></p>
+                    <div class="progress-bar">
+                      <div class="special-attack-progress"></div>
+                    </div>
+                  </div>
+
+                  <!-- Special defence -->
+                  <div class="stat">
+                    <div class="image-and-name">
+                      <img src="Images/Stats/shield.png" />
+                      <p>Sp.Defence</p>
+                    </div>
+                    <p class="special-defence-value"></p>
+                    <div class="progress-bar">
+                      <div class="special-defence-progress"></div>
+                    </div>
+                  </div>
+
+                  <!-- Speed -->
+                  <div class="stat">
+                    <div class="image-and-name">
+                      <img src="Images/Stats/lightning.png" />
+                      <p>Speed</p>
+                      
+                    </div>
+                    <p class="speed-value"></p>
+                    <div class="progress-bar">
+                      <div class="speed-progress"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+                    
+              <!-- Evolution section -->
+              <li id="Evolution" class="" style="display: none;">
+                <div class="evolution-tab"></div>
+              </li>
+
+
+              <!-- Downloads -->
+              <li id="Downloads" class="" style="display: none;">
+                <div class="downloads">
+
+                  <!-- Official artwork -->
+                  <div class="container-downloads">
+                    <div class="download-image-container">
+                      <img class="official-artwork-image" src=""/>
+                    </div>
+                    
+                    <div>
+                      <p class="headline">Official Artwork</p>
+                      <p class="description">Full-size HD image with a transperent background.</p>
+                    </div>
+                    
+                    <a class="download-artwork">
+                      <button class="official-artwork-download-button">
+                        <img class="download-img" src="Images/downloads.png" />
+                      </button>
+                    </a>
+                    
+                  </div>
+
+                  <!-- Sprites -->
+                  <div class="container-downloads">
+                    <div class="download-image-container">
+                      <img class="sprite" src="" />
+                    </div>
+                    
+                    <div>
+                      <p class="headline">Sprites</p>
+                      <p class="description">A collection of front and back view sprites.</p>
+                    </div>
+                    
+                    <a class="download-sprites">
+                      <button class="official-artwork-download-button">
+                        <img class="download-img" src="Images/downloads.png" />
+                      </button>
+                    </a>
+                  </div>
+
+                  <!-- Stats -->
+                  <div class="container-downloads">
+                    <div class="download-image-container">
+                      <img class="stats-image" src="Images/notepad.png" />
+                    </div>
+                    
+                    <div>
+                      <p class="headline">Stats</p>
+                      <p class="description">All of the stats for the given Pokemon.</p>
+                    </div>
+
+                    <a class="download-stats">
+                      <button class="official-artwork-download-button">
+                        <img class="download-img" src="Images/downloads.png" />
+                      </button>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+                              
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Next Pokemon. -->
+        <div class="pop-up-next-pokemon">
+          <p class="nextPokemonId"></p>
+          <img class="nextPokemonImage"/>
+          <p class="nextPokemonName"></p>
+        </div>
+      </div>
+
+      <!-- Navigation bar -->
+       <div class="nav-bar-container">
+        <div class="nav-bar">
+          <!-- Left side of the navigation bar. -->
+            <div class="left-nav-bar">
+              <div class="blue-light-container">
+                <img class="blue-light" src="/Images/blue-light.png" />
+              </div>
+
+              <div class="lights-container">
+                <div><img src="/Images/red-light.png" /></div>
+                <div><img src="/Images/yellow-light.png" /></div>
+                <div><img src="/Images/green-light.png" /></div> 
+              </div>
+            </div>
+          <!-- Middle of the navigation bar. -->
+          <div class="middle-nav-bar">
+            <input class="user-input" type="text" placeholder="Search by name or id">
+            
+            <div class="search-sort-container">
+              <button class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <i id="sort" class="fa-solid fa-sort"></i>
+            </div>
+          </div>
+
+          <!-- Right side of the navigation bar. -->
+           <div class="right-nav-bar">
+            <button class="home-button">Home</button>
+            <button class="favourites-button">Favourites</button>
+           </div>
+        </div>
+
+       </div>
+
+      <!-- If Favourite Pokemon is empty -->
+      <div class="container-favourite-pokemon">
+        <img src="Images/sad_pikachu.png" />
+        <p>Looks like you haven’t chosen any favorite Pokémon. <br> Explore and add your top picks!</p>
+        <button class="explore-button">Explore</button>
+      </div>
+
+      <!-- Home page list of Pokemon. -->
+      <div class="container"></div>
+      <div class="home-page-descending"></div>
+      <div class="home-page-favorites"></div>
+      <div class="home-page-search-results"></div>
+
+      <!-- Mobile footer menu. -->
+      <div class="container-mobile-menu">
+
+        <ul class="mobile-menu">
+          <li class="">
+            <i class="fa-solid fa-house"></i>
+            <p>Home</p>
+          </li>
+
+          <li class="">
+            <i class="fa-solid fa-heart"></i>
+            <p>Favorites</p>
+          </li>
+
+          <li class="">
+            <i class="fa-solid fa-sort"></i>
+            <p>Filter</p>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Footer. -->
+      <div class="footer">
+        <button class="show-more-button">Show more</button>
+      </div>
+ 
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="/JavaScript/helperFunctions.js" defer></script>
+    <script src="/JavaScript/querySelectElements.js" defer></script>
+    <script src="/JavaScript/pokemonFetcher.js" defer></script>
+    <script src="/JavaScript/homePage.js" defer></script>
+    <script src="/JavaScript/nav-bar.js" defer></script>
+    <script src="/JavaScript/Tabs.js" defer></script>
+    <script src="/JavaScript/addToFavourites.js" defer></script>
+    <script src="/JavaScript/showFavourites.js" defer></script>
+    <script src="/JavaScript/mobileMenu.js" defer></script>
+    
+    <script src="/JavaScript/popUpHelperFunctions.js" defer></script>
+    <script src="/JavaScript/popUp.js" defer></script>
+    <script src="/JavaScript/popUpFavorites.js" defer></script>
+    <script src="/JavaScript/evolution.js" defer></script>
+    <script src="/JavaScript/switchCurrent.js" defer></script>
+    <script src="/JavaScript/switchMainPokemonFavorites.js" defer></script>
+    <script src="/JavaScript/downloads.js" defer></script>
+    
+    <!-- JavaScript -->
+
+  </body>
+</html>
