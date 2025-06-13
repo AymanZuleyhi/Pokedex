@@ -153,58 +153,58 @@ const formatTypeColor = (type) => {
 const setTypeImage = (img, type) => {
   switch (type) {
     case "Normal":
-      img.src = "../Images/Type/paws.png";
+      img.src = "/Pokedex/Images/Type/paws.png";
       break;
     case "Fire":
       img.src = "/Pokedex/Images/Type/flame.png";
       break;
     case "Water":
-      img.src = "../Images/Type/drop.png";
+      img.src = "/Pokedex/Images/Type/drop.png";
       break;
     case "Electric":
-      img.src = "../Images/Type/flash.png";
+      img.src = "/Pokedex/Images/Type/flash.png";
       break;
     case "Grass":
-      img.src = "../Images/Type/leaf.png";
+      img.src = "/Pokedex/Images/Type/leaf.png";
       break;
     case "Ice":
-      img.src = "../Images/Type/snowflake.png";
+      img.src = "/Pokedex/Images/Type/snowflake.png";
       break;
     case "Fighting":
-      img.src = "../Images/Type/boxing-gloves.png";
+      img.src = "/Pokedex/Images/Type/boxing-gloves.png";
       break;
     case "Poison":
-      img.src = "../Images/Type/danger.png";
+      img.src = "/Pokedex/Images/Type/danger.png";
       break;
     case "Ground":
-      img.src = "../Images/Type/ground.png";
+      img.src = "/Pokedex/Images/Type/ground.png";
       break;
     case "Flying":
-      img.src = "../Images/Type/wings.png";
+      img.src = "/Pokedex/Images/Type/wings.png";
       break;
     case "Psychic":
-      img.src = "../Images/Type/eye.png";
+      img.src = "/Pokedex/Images/Type/eye.png";
       break;
     case "Bug":
-      img.src = "../Images/Type/bug.png";
+      img.src = "/Pokedex/Images/Type/bug.png";
       break;
     case "Rock":
-      img.src = "../Images/Type/stone.png";
+      img.src = "/Pokedex/Images/Type/stone.png";
       break;
     case "Ghost":
-      img.src = "../Images/Type/ghost.png";
+      img.src = "/Pokedex/Images/Type/ghost.png";
       break;
     case "Dragon":
-      img.src = "../Images/Type/dragon.png";
+      img.src = "/Pokedex/Images/Type/dragon.png";
       break;
     case "Dark":
-      img.src = "../Images/Type/moon.png";
+      img.src = "/Pokedex/Images/Type/moon.png";
       break;
     case "Steel":
-      img.src = "../Images/Type/beam.png";
+      img.src = "/Pokedex/Images/Type/beam.png";
       break;
     case "Fairy":
-      img.src = "../Images/Type/fairy.png";
+      img.src = "/Pokedex/Images/Type/fairy.png";
       break;
   }
 };
