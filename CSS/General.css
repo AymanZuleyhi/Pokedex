@@ -1,0 +1,30 @@
+:root{
+  /* Blue button => Home, Favorites, Show more. */
+  --btn-background-clr: rgb(97,157,218);
+  --btn-color: white;
+  --btn-height: 38px;
+  --btn-width: 89px;
+  --btn-remove-brdr: "none";
+  --btn-border-rds: 60px;
+  --btn-border-clr: rgb(38, 91, 145);
+  --cursor: pointer;
+
+  /* Hover */
+  --btn-hover-backround-clr: rgb(38, 91, 145);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.body-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+p {
+  font-family: "Roboto";
+  margin: 0;
+}

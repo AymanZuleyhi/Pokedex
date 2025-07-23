@@ -1,0 +1,29 @@
+/* Footer. */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 10vh;
+  width: 100%;
+
+  padding-bottom: 5vh;
+}
+.footer button{
+  background-color: var(--btn-background-clr);
+  color: var(--btn-color);
+  height: var(--btn-height);
+  width: var(--btn-width);
+  border: var(--btn-remove-brdr);
+  border-radius: var(--btn-border-rds);
+  border-bottom: 4px solid var(--btn-border-clr);
+  border-right: 4px solid var(--btn-border-clr);
+
+  transition: 0.3s ease;
+  cursor: var(--cursor);
+}
+.footer button:hover{
+  transform: translate(2px, 2px);
+  border-bottom: 2px solid var(--btn-hover-backround-clr);
+  border-right: 2px solid var(--btn-hover-backround-clr);
+}
